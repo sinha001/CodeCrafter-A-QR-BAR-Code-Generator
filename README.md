@@ -2,7 +2,7 @@
 
 A modern, fast, and user-friendly web application for generating high-quality QR codes and barcodes instantly. Built with React, TypeScript, and Tailwind CSS.
 
-![CodeCraft Banner](https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=1200&h=400&fit=crop)
+![CodeCraft Banner](preview.png)
 
 ## ✨ Features
 
