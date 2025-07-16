@@ -32,6 +32,8 @@ import {
 import QRCode from 'qrcode';
 import JsBarcode from 'jsbarcode';
 import { Button } from './components/ui/button';
+import { CodeCraftLogoWithText } from "@/components/logo"
+
 
 export default function QRBarCodeGenerator() {
   const [qrText, setQrText] = useState('');
@@ -126,17 +128,9 @@ export default function QRBarCodeGenerator() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center">
-                <QrCode className="w-5 h-5 text-white" />
-              </div>
-              <h1 className="text-xl font-bold bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-                CodeCraft
-              </h1>
+              <CodeCraftLogoWithText size={32} textSize="text-xl" />
             </div>
-            <Badge
-              variant="secondary"
-              className="bg-emerald-100 text-emerald-700 border-emerald-200"
-            >
+            <Badge variant="secondary" className="bg-emerald-100 text-emerald-700 border-emerald-200">
               Free &amp; Unlimited
             </Badge>
           </div>
@@ -487,11 +481,8 @@ export default function QRBarCodeGenerator() {
       <footer className="bg-gray-900 text-white py-12">
         <div className="container mx-auto px-4">
           <div className="text-center">
-            <div className="flex items-center justify-center space-x-2 mb-4">
-              <div className="w-8 h-8 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-lg flex items-center justify-center">
-                <QrCode className="w-5 h-5 text-white" />
-              </div>
-              <h3 className="text-xl font-bold">CodeCraft</h3>
+          <div className="flex items-center justify-center space-x-2 mb-4">
+              <CodeCraftLogoWithText size={32} textSize="text-xl" className="justify-center" />
             </div>
             <p className="text-gray-400 mb-6">
               Free QR Codes &amp; BarCode Generator - Create Professional Codes
