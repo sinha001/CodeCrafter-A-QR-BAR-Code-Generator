@@ -41,7 +41,7 @@ export default function QRBarCodeGenerator() {
   const [qrDataUrl, setQrDataUrl] = useState('');
   const [barcodeDataUrl, setbarcodeDataUrl] = useState('');
   const qrCanvasRef = useRef<HTMLCanvasElement>(null);
-  const barcodeCanvasRed = useRef<HTMLCanvasElement>(null);
+  const barcodeCanvasRef = useRef<HTMLCanvasElement>(null);
 
   //Generate QR CODE...
   useEffect(() => {
@@ -59,7 +59,7 @@ export default function QRBarCodeGenerator() {
               light: '#ffffff',
             },
           },
-          (error) => {
+          (error: any) => {
             if (!error) {
               setQrDataUrl(canvas.toDataURL());
             }
